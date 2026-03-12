@@ -9,7 +9,7 @@
 ## 🐧 Linux
 - [Where to find system logs](LINUX/finding-logs.md)
 - [How to check firewal](LINUX/fw.md)
-- [Twsting - Ports](LINUX/testing-ports.md)
+- [Testing - Ports](LINUX/testing-ports.md)
 
 
 ## 🪟 Windows
