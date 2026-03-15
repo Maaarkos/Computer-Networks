@@ -17,8 +17,11 @@ Welcome to my personal IT documentation and troubleshooting notes. In this Knowl
 
 ## 🌐 Computer Networks
 - [Cisco - Logging and Debugging](COMPUTER-NETWORKS/cisco-logs-and-debug.md)
+
 **VPNs & Cryptography:**
+
 - [IPsec & IKEv1 - Architecture & Theory](COMPUTER-NETWORKS/VPNs/ipsec-ikev1-theory.md)
+
 - [Testing - Ports](COMPUTER-NETWORKS/ports.md)
 - [Hairpining](COMPUTER-NETWORKS/hairpining.md)
 
