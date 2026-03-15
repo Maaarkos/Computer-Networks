@@ -16,6 +16,7 @@
 Welcome to my personal IT documentation and troubleshooting notes. In this Knowledge Base I focus on Cisco Devices
 
 ## 🌐 Computer Networks
+- [OSI Model & Encapsulation](computer-networks/osi-model-and-encapsulation.md)
 - [Cisco - Logging and Debugging](COMPUTER-NETWORKS/cisco-logs-and-debug.md)
 - [Testing - Ports](COMPUTER-NETWORKS/ports.md)
 - [Hairpining](COMPUTER-NETWORKS/hairpining.md)
