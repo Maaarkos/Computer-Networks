@@ -1,17 +1,21 @@
 # 🧅 The OSI Model & Encapsulation (The Envelope Theory)
 
-Before a packet hits the wire, it must go through the "assembly line" in the operating system. Each layer attaches its own piece of information (headers). Let's break it down with a grain of salt.
+Before a packet hits the wire, it must go through the "assembly line" in the operating system. Each layer attaches its own piece of information (headers). Let's break it down to the absolute essentials.
 
 ### 📊 The OSI Model (Practical View)
 
-| OSI Layer | Layer Name | What happens here? (What do we attach?) |
-| :---: | :--- | :--- |
-| **Layer 8**<br>*(IT Joke)* | **User**<br>*(The Carbon-Based Error)* | Karen from Accounting clicks "Send email". Generates the intent (and usually 99% of all network issues). |
-| **Layer 7-5** | **App / Pres / Session** | `[RAW DATA]` - The actual content is created (e.g., the text of the email, an image, an HTTP request). |
-| **Layer 4** | **Transport** *(TCP/UDP)* | `[L4 HEADER]` - We attach **Ports** (e.g., Source: 54321, Dest: 443). This tells the receiving OS which application should get the data. |
-| **Layer 3** | **Network** *(IP)* | `[L3 HEADER]` - We attach **IP Addresses** (Source & Dest). These are the global postal addresses for routers on the internet. *(IPsec lives here!)* |
-| **Layer 2** | **Data Link** *(Ethernet)* | `[L2 HEADER]` - We attach **MAC Addresses** (at the front).<br>`[L2 TRAILER]` - We attach the **FCS / Checksum** (at the very back). This is the packaging for local LAN switches. |
-| **Layer 1** | **Physical** | Conversion of this entire package into 1s and 0s (electrical impulses on copper or light pulses in fiber). |
+<pre style="background-color: #000000; color: #00ff00; padding: 15px; font-size: 14px; border-radius: 8px; border: 1px solid #444; line-height: 1.2;">
++-------+---------------------------+---------------------------------------+
+| LAYER | OSI LAYER NAME            | ENCAPSULATION (WHAT WE ATTACH)        |
++-------+---------------------------+---------------------------------------+
+|  L8   | User (IT Joke)            | The Intent (Carbon-Based Error)       |
+| L7-L5 | App / Pres / Session      | [RAW DATA]                            |
+|  L4   | Transport (TCP/UDP)       | [L4 HEADER] - Source & Dest Ports     |
+|  L3   | Network (IP)              | [L3 HEADER] - Source & Dest IPs       |
+|  L2   | Data Link (Ethernet)      | [L2 HEADER] - MACs / [TRAILER] - FCS  |
+|  L1   | Physical                  | Bits (1s and 0s)                      |
++-------+---------------------------+---------------------------------------+
+</pre>
 
 ---
 
