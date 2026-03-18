@@ -21,6 +21,7 @@ Welcome to my personal IT documentation and troubleshooting notes. In this Knowl
 - [MTU vs MSS](COMPUTER-NETWORKS/mtu-mss.md)
 - [Testing - Ports](COMPUTER-NETWORKS/ports.md)
 - [Hairpining](COMPUTER-NETWORKS/hairpining.md)
+- [Flash-vs-Bootflash](COMPUTER-NETWORKS/flash-vs-bootflash.md)
 
 **VPNs & Cryptography:**
 
