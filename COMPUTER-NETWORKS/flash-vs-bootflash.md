@@ -31,13 +31,15 @@ So, where did this discrepancy come from?
 
 ### 🕰️ The 90s & 2000s: The Era of the "Dumb" ROMMON
 
-Back in the day, on heavy-duty routers like the Cisco 7200 series, `flash:` and `bootflash:` were **two physically separate pieces of hardware**.
+Back in the day, on heavy-duty, modular routers (like the Cisco 7200 series) and core switches, `flash:` and `bootflash:` were **two physically separate pieces of hardware**.
 
 1.  **`flash:` (The Main Drive):** This was usually a removable PCMCIA card (e.g., 64MB or 256MB). It held the full, heavy IOS image, configurations, and logs. However, early flash memory was expensive and highly prone to failure.
 2.  **`bootflash:` (The Rescue Chip):** Because the main flash was unreliable, Cisco soldered a smaller, separate memory chip directly onto the motherboard. 
 
+*(Note: Simpler, fixed-configuration access switches like the legendary Catalyst 2960 never had a soldered `bootflash:` chip. They operated solely on a single `flash:` memory).*
+
 **The "Starter" Problem:**
-When you powered on an old router, the first thing to wake up was the **ROMMON** (ROM Monitor). The old ROMMON was "dumb". It didn't have the drivers to read complex file systems like FAT16/FAT32 located on the removable `flash:` card. 
+When you powered on an old modular router, the first thing to wake up was the **ROMMON** (ROM Monitor). The old ROMMON was "dumb". It didn't have the drivers to read complex file systems like FAT16/FAT32 located on the removable `flash:` card. 
 
 So, it reached out to the soldered `bootflash:`, which contained a stripped-down, lightweight "Boot Image". This boot image acted like a car's starter motor. It had just enough drivers to read the main `flash:` card and kickstart the full IOS. 
 Additionally, if the main flash died or someone formatted the wrong card, this tiny system in `bootflash:` could bring up a single network interface, allowing the admin to download a new IOS via TFTP.
@@ -58,3 +60,4 @@ However, to prevent millions of legacy automation scripts and old engineer habit
 
 > **💡 Summary:**
 > You can use `flash:` and `bootflash:` interchangeably. It’s just Cisco's way of respecting the past while running on modern hardware.
+
