@@ -22,6 +22,7 @@ Welcome to my personal IT documentation and troubleshooting notes. In this Knowl
 - [Testing - Ports](COMPUTER-NETWORKS/ports.md)
 - [Hairpining](COMPUTER-NETWORKS/hairpining.md)
 - [Flash-vs-Bootflash](COMPUTER-NETWORKS/flash-vs-bootflash.md)
+- [Bundle-vs-Install-Mode](COMPUTER-NETWORKS/bundle-vs-install-mode.md)
 
 **VPNs & Cryptography:**
 
