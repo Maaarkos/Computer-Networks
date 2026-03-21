@@ -3,7 +3,7 @@
 The goal of this experiment is to intentionally trigger IP fragmentation on Firepower (FPR) firewalls and observe the behavior on the endpoints (two Windows VMs running Wireshark 🦈).
 
 <div align="center">
-  <img src="IMAGES/TOPO_VPN_S2S_VTI.png" width="100%">
+  <img src="IMAGES/TOPO_VPN_S2S_VTI.png" width="200%">
 </div>
 
 In this topology, we have an IPsec Site-to-Site VPN built on VTI using IKEv2 with an **AES-GCM** proposal. This is important because AES-GCM significantly reduces the header overhead. 
