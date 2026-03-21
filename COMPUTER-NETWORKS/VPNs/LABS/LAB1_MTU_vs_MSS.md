@@ -3,7 +3,7 @@
 The goal of this experiment is to intentionally trigger IP fragmentation on Firepower (FPR) firewalls and observe the behavior on the endpoints (two Windows VMs running Wireshark 🦈).
 
 <div align="center">
-  <img src="IMAGES/TOPO_VPN_S2S_VTI.png" width="200%">
+  <img src="IMAGES/TOPO_VPN_S2S_VTI.png" style="max-width: none; width: 1000px;">
 </div>
 
 In this topology, we have an IPsec Site-to-Site VPN built on VTI using IKEv2 with an **AES-GCM** proposal. This is important because AES-GCM significantly reduces the header overhead. 
@@ -27,7 +27,7 @@ By default, FTDs have TCP MSS adjustment enabled. This means that when they see 
 To prove this theory, I ran some tests. I initiated an `iperf` session from Computer B (IP: `192.168.99.10`). In Wireshark running on Computer B, we can clearly see the MSS value we are trying to negotiate:
 
 <div align="center">
-  <img src="IMAGES/Transmission_comp_A.png" width="115%">
+  <img src="IMAGES/Transmission_comp_A.png" style="max-width: none; width: 1200px;">
 </div> 
 
 As seen in the capture, Computer B tries to negotiate an MSS of **1460**, but receives a SYN-ACK with an MSS of **1380**. 
