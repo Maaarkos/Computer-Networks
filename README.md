@@ -30,7 +30,7 @@ Welcome to my personal IT documentation and troubleshooting notes. In this Knowl
 - [IPsec & IKEv1 - Architecture & Theory](COMPUTER-NETWORKS/VPNs/THEORY/ipsec-ikev1-theory.md)
 
 #### 🛠️ Labs
-- [LAB1_MTU_vs_MSS] (COMPUTER-NETWORKS/VPNs/LABS/LAB1_MTU_vs_MSS.md)
+- [LAB1_MTU_vs_MSS](COMPUTER-NETWORKS/VPNs/LABS/LAB1_MTU_vs_MSS.md)
 
 
 ## 🐧 Linux
